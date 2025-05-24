@@ -1,0 +1,31 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+.theme-toggle-button {
+  border: none;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: normal;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  flex-shrink: 0;
+  }

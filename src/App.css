@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-section {
+  height: 100vh;
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.dark-theme .hero-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.light-theme .hero-section {
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-theme {
+  background-color: #121212;
+  color: white;
 }
+
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.transition-theme {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.theme-change-animation {
+  animation: fadeFlash 0.6s ease;
+}
+
+@keyframes fadeFlash {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.scroll-snap-container {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* full viewport height */
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center content */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Optional: style sections background for distinction */
+#home { background-color: #f5f5f5; }
+#about { background-color: #e0e0e0; }
+#education { background-color: #cfcfcf; }
+#projects { background-color: #bdbdbd; }
+#contact { background-color: #aaa; }
+
