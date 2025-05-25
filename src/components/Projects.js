@@ -1,12 +1,13 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+// import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 
 function Projects() {
   return (
-    <section id="projects" className="py-5" data-aos="fade-up" style={{ scrollMarginTop: '150px', marginTop: '60px' }}>
+    <section id="projects" className="py-5" data-aos="fade-up">
       <Container>
         <h2>Projects</h2>
-        <Row>
+        {/* <Row>
           {[1, 2, 3].map((project) => (
             <Col md={4} key={project} className="mb-4" data-aos="zoom-in" data-aos-delay={project * 100}>
               <Card>
@@ -20,7 +21,7 @@ function Projects() {
               </Card>
             </Col>
           ))}
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );

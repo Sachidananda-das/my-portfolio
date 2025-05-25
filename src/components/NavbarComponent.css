@@ -4,7 +4,7 @@
 
 .theme-toggle-button {
   border: none;
-  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: linear-gradient(to right, #000, #fff);
   color: white;
   border-radius: 30px;
   padding: 0.5rem 1rem;
